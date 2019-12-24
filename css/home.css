@@ -1,0 +1,530 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Sep 21, 2019, 11:22:37 PM
+    Author     : Biswajeet Pradhan/ Ajeet Dhiman
+*/
+.x-invisible{visibility: hidden;}
+.x-visible{visibility: visible;}
+.d-flx{display: flex;}
+.d-block{display: block;}
+.flx-col{flex-direction: column;}
+.flx-row{flex-direction: row;}
+.flx-col-rev{flex-direction: column-reverse;}
+.flx-row-rev{flex-direction: row-reverse;}
+.flx-1{flex: 1;}
+.flx-wrap{flex-wrap: wrap;}
+.no-padding{padding: 0;}
+/*========================================*/
+/*================Owl Carousel Slider================*/
+.banner-slider .item {
+  height: 100%;
+  position: relative;
+}
+.banner-slider .item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.banner-slider .item .cover {
+  padding: 75px 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+}
+.banner-slider .item .cover .header-content {
+  position: relative;
+  padding: 56px;
+  overflow: hidden;
+}
+.banner-slider .item .cover .header-content .line {
+  content: "";
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  position: absolute;
+  border: 9px solid #fff;
+  -webkit-clip-path: polygon(0 0, 60% 0, 36% 100%, 0 100%);
+  clip-path: polygon(0 0, 60% 0, 36% 100%, 0 100%);
+}
+.banner-slider .item .cover .header-content h2 {
+  font-weight: 300;
+  font-size: 35px;
+  color: #fff;
+}
+.banner-slider .item .cover .header-content h1 {
+  font-size: 56px;
+  font-weight: 600;
+  margin: 5px 0 20px;
+  word-spacing: 3px;
+  color: #fff;
+}
+.banner-slider .item .cover .header-content h4 {
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 36px;
+  color: #fff;
+  width: 85%;
+}
+@media(max-width: 1366px) {
+.banner-slider .item .cover .header-content h4{
+  width: 75%!important;
+}
+}
+@media(max-width: 768px) {
+.banner-slider .item .cover .header-content h4{
+  width: 100%!important;
+  font-size: 18px!important;
+}
+.banner-slider .item .cover .header-content{
+  padding:32px!important;
+}
+.banner-slider .item .cover .header-content h2{
+  font-size: 16px!important;
+}
+.banner-slider .item .cover .header-content h1{
+  font-size: 30px!important;
+}
+}
+.banner-slider .owl-item.active h1 {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  animation-name: fadeInDown;
+  animation-delay: 0.3s;
+}
+.banner-slider .owl-item.active h2 {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  animation-name: fadeInDown;
+  animation-delay: 0.3s;
+}
+.banner-slider .owl-item.active h4 {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  animation-name: fadeInUp;
+  animation-delay: 0.3s;
+}
+.banner-slider .owl-item.active .line {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  animation-name: fadeInLeft;
+  animation-delay: 0.3s;
+}
+.banner-slider .owl-nav .owl-prev {
+  position: absolute;
+  left: 15px;
+  top: 43%;
+  opacity: 0;
+  -webkit-transition: all 0.4s ease-out;
+  transition: all 0.4s ease-out;
+  background: rgba(0, 0, 0, 0.5) !important;
+  width: 40px;
+  cursor: pointer;
+  height: 40px;
+  position: absolute;
+  display: block;
+  z-index: 1000;
+  border-radius: 0;
+}
+.banner-slider .owl-nav .owl-prev span {
+  font-size: 1.6875rem;
+  color: #fff;
+}
+.banner-slider .owl-nav .owl-prev:focus {
+  outline: 0;
+}
+.banner-slider .owl-nav .owl-prev:hover {
+  background: #000 !important;
+}
+.banner-slider .owl-nav .owl-next {
+  position: absolute;
+  right: 15px;
+  top: 43%;
+  opacity: 0;
+  -webkit-transition: all 0.4s ease-out;
+  transition: all 0.4s ease-out;
+  background: rgba(0, 0, 0, 0.5) !important;
+  width: 40px;
+  cursor: pointer;
+  height: 40px;
+  position: absolute;
+  display: block;
+  z-index: 1000;
+  border-radius: 0;
+}
+.banner-slider .owl-nav .owl-next span {
+  font-size: 1.6875rem;
+  color: #fff;
+}
+.banner-slider .owl-nav .owl-next:focus {
+  outline: 0;
+}
+.banner-slider .owl-nav .owl-next:hover {
+  background: #000 !important;
+}
+.banner-slider:hover .owl-prev {
+  left: 0px;
+  opacity: 1;
+}
+.banner-slider:hover .owl-next {
+  right: 0px;
+  opacity: 1;
+}
+
+/*========================================*/
+/*================Calendar================*/
+.calendar_wrapper {
+    position: absolute;
+    top: 10%;
+    right: 18px;
+    z-index: 99;
+    width: 20%;
+}
+@media(max-width: 1366px) {
+  .calendar_wrapper {
+    width: 23%!important;
+    }
+  }
+@media(max-width: 1100px) {
+.calendar_wrapper{
+  top: 8%;
+  }
+.datepicker .datepicker-header {
+    height: 120px!important;
+    }
+} 
+@media(max-width: 1024px) {
+  .calendar_wrapper {
+    width: 26%!important;
+    }
+}
+@media (max-width: 768px){
+.calendar_wrapper {
+    width: 40%!important;
+}
+.datepicker .datepicker-header {
+    height: 150px!important;
+}
+.calendar-panel {
+    position: fixed;
+    width: 100%;
+    max-width: 250px;
+    right: -250px; 
+    transition: right 0.3s ease-in-out;
+}
+.calendar-panel.right-0{
+  right: 0!important;
+}
+.calendar-panel span{position: relative;cursor: pointer;}
+.calendar-panel span.ease-calendar:after {
+    position: absolute;
+    content: "\f274";
+    font-family: "FontAwesome";
+    top: 70px;
+    left: -50px;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    background: #F56961;
+    color: #fff;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 5px 0 0 5px;
+    font-size: 20px;
+}
+}
+@media (max-width: 575px){
+.banner-slider .item .cover .header-content {
+    padding: 2px 2px 2px 20px!important;
+}
+.banner-slider .item .cover .header-content h2 {
+    font-size: 14px!important;
+    line-height: 0em!important;
+}
+.banner-slider .item .cover .header-content h1{
+  font-size: 22px!important;
+  line-height: 1em;
+}
+.banner-slider .item .cover .header-content h4 {
+    font-size: 14px!important;
+    line-height: 2em;
+}
+}
+@media (max-width: 460px){
+  .banner-slider .item .cover .header-content .line{
+    display: none;
+  }
+}
+@media (max-width: 375px){
+.banner-slider .item .cover .header-content{
+  display: none;
+}
+}
+.datepicker{
+    width: 100%;
+    background: #fdfdfd;
+    /*border-radius: 10px 0 0 10px;*/
+    box-shadow: 0 19px 38px rgba(0,0,0,0.2), 0 15px 12px rgba(0,0,0,0.2);
+}
+.datepicker .datepicker-header{
+    height: 200px;
+    background-image: url('https://images.pexels.com/photos/2393816/pexels-photo-2393816.jpeg?cs=srgb&dl=automotive-bike-blur-2393816.jpg&fm=jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border-radius: 5px 5px 0 0;
+}
+.datepicker .ui-datepicker-inline{
+    padding: 10px;
+}
+.datepicker .ui-datepicker-header{
+    text-align: center;
+    font-size: 1.4em;
+    padding-bottom: 0.5em;
+    letter-spacing: 0.1em;
+    color: #333;
+}
+.datepicker .ui-datepicker-header .ui-datepicker-prev,
+.datepicker .ui-datepicker-header .ui-datepicker-next{
+    float: left;
+    cursor: pointer;
+    font-size: 1.4em;
+    padding: 0 5px;
+    color: #903c07;
+    transition: 0.6s;
+}
+.datepicker .ui-datepicker-header .ui-datepicker-next{
+    float: right;
+}
+.datepicker .ui-datepicker-header .ui-datepicker-prev:hover{
+    color: #fe9c0f;
+}
+.datepicker .ui-datepicker-header .ui-datepicker-next:hover{
+    color: #fe9c0f;
+}
+.datepicker .ui-datepicker-title {
+    font-size: 14px;
+    color: #903c07;
+}
+.datepicker .ui-datepicker-calendar{
+    width: 100%;
+    text-align: center;
+}
+.datepicker .ui-datepicker-calendar thead{
+    color: #ddd;
+}
+.datepicker .ui-datepicker-calendar tr th,
+.datepicker .ui-datepicker-calendar tr td{
+    padding-bottom: 0.4em;
+    color: #903c07;
+    text-align: center;
+}
+.datepicker .ui-datepicker-calendar a {
+    color: #903c07;
+    text-decoration: none;
+    display: block;
+    margin: 0 auto;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 50%;
+    border:1px solid transparent;
+    cursor: pointer;
+}
+.datepicker .ui-datepicker-calendar a:hover{
+    background: #fe9c0f;
+    color: #fff;
+    -webkit-transition: 0.7s;
+       -moz-transition: 0.7s;
+        -ms-transition: 0.7s;
+         -o-transition: 0.7s;
+            transition: 0.7s;
+    transform: scale(1);
+}
+.datepicker .ui-datepicker-calendar a:select{
+    background: red;
+}
+.datepicker .ui-datepicker-calendar .ui-state-highlight{
+    background: #fe9c0f;
+    color: #fff;
+}
+.datepicker .ui-datepicker-calendar .ui-state-highlight:hover{
+    color: #fff;
+}
+
+/*======================================
+============Tour Destination==========*/
+
+.customize-tour {
+   float: left;
+   margin-bottom: 40px;
+   width: 100%;
+}
+ .customize-tour .menu-content {
+   margin: 0;
+   padding: 0;
+   list-style-type: none;
+}
+ .customize-tour .menu-content::before, .card .menu-content::after {
+   content: '';
+   display: table;
+}
+.customize-tour .menu-content::after {
+   clear: both;
+}
+ .customize-tour .menu-content li {
+   display: inline-block;
+}
+ .customize-tour .menu-content a {
+   color: #fff;
+}
+ .customize-tour .menu-content span {
+   position: absolute;
+   left: 50%;
+   top: 0;
+   font-size: 10px;
+   font-weight: 700;
+   transform: translate(-50%, 0);
+}
+ .customize-tour .wrapper {
+   background-color: #fff;
+   min-height: 370px;
+   position: relative;
+   overflow: hidden;
+   box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.2);
+}
+ .customize-tour .wrapper:hover .data {
+   transform: translateY(0);
+   opacity: 0.7;
+}
+.customize-tour .data {
+   position: absolute;
+   bottom: 0;
+   width: 100%;
+   color: #fff;
+   transform: translateY(calc(5px + 4em));
+   transition: transform 0.3s ease;
+   z-index: 1;
+}
+.customize-tour .data .content {
+   padding: 1em;
+   position: relative;
+   z-index: 1;
+}
+ .customize-tour .tour-name {
+   font-size: 20px;
+}
+ .customize-tour .title {
+   margin-top: 10px;
+   font-size: 14px;
+}
+@media (max-width: 767px){
+  .customize-tour .title {
+   line-height: 1rem;
+}
+.customize-tour .wrapper:hover .text{
+  line-height: 1.2rem;
+}
+}
+@media (max-width: 480px){
+ .w-xs-100{width: 100%;}
+}
+.customize-tour .text {
+   height: 0;
+   margin: 0;
+   transition: height 0.3s ease;
+}
+.customize-tour .wrapper:hover .text {
+   height: auto;
+   margin-bottom: 15px;
+}
+ .customize-tour .wrapper {
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+   position: relative;
+}
+ .customize-tour .wrapper:after{
+    position: absolute;
+    content: "";
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.5);
+    visibility: hidden;
+    z-index: -1;
+    transition: background z-index 0.3s ease-out;
+ }
+  .customize-tour .wrapper:hover:after{
+    visibility: visible;
+    z-index: 0;
+  }
+ .customize-tour .wrapper:hover .menu-content span {
+   transform: translate(-50%, -10px);
+   opacity: 1;
+   transition: transform 0.3s ease-in-out;
+}
+ .customize-tour .header {
+   color: #fff;
+   padding: 1em;
+}
+ .customize-tour .header::before, .customize-tour .header::after {
+   content: '';
+   display: table;
+}
+ .customize-tour .header::after {
+   clear: both;
+}
+ .customize-tour .header .date {
+   float: left;
+   font-size: 12px;
+}
+ .customize-tour .menu-content {
+   float: right;
+}
+ .customize-tour .menu-content li {
+   margin: 0 5px;
+   position: relative;
+}
+ .customize-tour .menu-content span {
+   transition: all 0.3s;
+   opacity: 0;
+}
+ .customize-tour .title a {
+   color: #fff;
+   font-weight: 500;
+}
+ .customize-tour .button {
+   display: block;
+   width: 100px;
+   margin: 0em auto 1em;
+   padding: 10px 15px;
+   background: #903c07;
+   text-align: center;
+   font-size: 12px;
+   color: #fff;
+   line-height: 1;
+   position: relative;
+   font-weight: 400;
+}
+

@@ -1,0 +1,152 @@
+
+/*////////////////////////////////////////Destination Page Css start/////////////////////////////////////////*/
+
+
+.wrapper-moto{
+    
+/*    width: 70%;
+    margin: 0 auto;
+    left: 55%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;*/
+
+position: relative;
+}
+
+.wrapper-moto .img{
+    
+    display: block;
+    width: 80%;
+    height: auto;
+    
+    
+}
+
+.content-moto{
+    
+    display:table;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 16px;
+    padding: 20px;
+}
+
+.overlay .btn-moto{
+    
+    top: 71%;
+    left: 48%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    opacity: 1!important;
+    background: #fe9c0f;
+    border-color: #fe9c0f;
+}
+
+.content-head{
+    
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-transform: uppercase;
+    
+}
+
+.overlay{
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.wrapper-moto:hover .overlay{
+    
+    opacity: 1;
+}
+
+#destination-tour{
+    
+    
+    background-color: #cda975;
+    padding: 7px;
+    
+    
+}
+
+
+.tour-section{
+    
+    
+    padding-top: 0px;
+    
+}
+
+.tour-section h4{
+    
+    font-size: 24px;
+    color: #000;
+    text-transform: uppercase;
+    margin: 0 32% 20px 0;
+    text-align: left;
+    width: 100%!important;
+}
+
+.tour-section hr {
+    border-color: #fcb714;
+    border-width: 3px;
+    margin: 25px 0 50px;
+    width: 100px;
+}
+.tour-section .bor {
+    border-bottom: 3px dotted #fcb714;
+    margin: -53px 0 50px;
+    width: 127px;
+}
+
+.section-title h4{
+    
+    font-size: 24px;
+    color: #000;
+    text-transform: uppercase;
+    margin: 0 32% 20px 0;
+    text-align: left;
+    width: 100%!important;
+}
+
+.section-title hr {
+    border-color: #903c07;
+    border-width: 3px;
+    margin: 25px 0 50px;
+    width: 100px;
+}
+.section-title .bor {
+    border-bottom: 3px dotted #903c07;
+    margin: -53px 0 50px;
+    width: 127px;
+}
+
+
+.tour-inner-row{
+    
+    padding-top: 10px;
+}
+
+.daybold{
+    
+    font-weight: 700;
+}
+
+/*////////////////////////////////////////Destination Page Css End/////////////////////////////////////////*/
